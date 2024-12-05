@@ -3,40 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registration Form</title>
     <link rel="stylesheet" href="log-sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Azeres Store</title>
 </head>
-<body>
-    <div class="container">
-        <div class="form signup">
-            <h2>Sign Up</h2>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <i class="fa-regular fa-user"></i>
-                <span>username</span>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <i class="fa-regular fa-envelope"></i>
-                <span>email address</span>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <i class="fa-regular fa-lock"></i>
-                <span>create password</span>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <i class="fa-solid fa-lock"></i>
-                <span>comfirm password</span>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="Create Account">
-            </div>
-            <p>Already a member ? <a href="#"
-                class="login">Log in</a></p>
+<body> <!--Navbar-->
+    <header>
+           <p id="logo">AZERES</p>
+     <nav>
+        <ul class="nav-links">
+           <li><a href="#man">MAN</a></li>
+           <li><a href="#woman">WOMAN</a></li>
+           <li><a href="#new">NEW</a></li>
+       </ul>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn"> <a href="#" class="bar"><i class="fa-solid fa-bars"></i></a></button>
+        <div class="dropdown-content">
+          <a href="#"><input type="text" placeholder="Search"></a>
+          <a href="#">LOG IN</a>
+          <a href="#">SIGN IN</a>
+          
         </div>
-        <div class="form signin"></div>
-    </div>
+      </div>      
+    </header>
+    
+    <!--Login forma-->
+    <main>
+        <div class="login-container">
+            <form class="login-form">
+              <h1>Welcome Back</h1>
+              <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+              </div>
+              <button type="submit">Log In</button>
+              <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+          </div>
+    </main>
 </body>
 </html>
