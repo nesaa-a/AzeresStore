@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,26 +28,36 @@
           <a href="#">SIGN IN</a>
           
         </div>
-      </div>      
+      </div>
     </header>
-    
-    <!--Login forma-->
-    <main>
-        <div class="login-container">
-            <form class="login-form">
-              <h1>Welcome Back</h1>
-              <div class="input-group">
-                <input type="email" id="email" required>
-                <label for="email">Email</label>
-              </div>
-              <div class="input-group">
-                <input type="password" id="password" required>
-                <label for="password">Password</label>
-              </div>
-              <button type="submit">Log In</button>
-              <p class="signup-link">Don't have an account? <a href="signup.html" onclick="showSignUp()">Sign Up</a></p>
-            </form>
-          </div>
-    </main>
+
+    <!--Sign Up forma-->
+    <div class="form-container hidden" id="signup-container">
+      <form class="form">
+        <h1>Create Account</h1>
+        <div class="input-group">
+          <input type="text" id="signup-name" required>
+          <label for="signup-name">Your First Name</label>
+        </div>
+        <div class="input-group">
+          <input type="name" id="signup-name" required>
+          <label for="signup-name">Your Last Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="signup-email" required>
+          <label for="signup-email">Your Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="signup-password" required>
+          <label for="signup-password">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="signup-confirm-password" required>
+          <label for="signup-confirm-password">Confirm Password</label>
+        </div>        
+        <button type="submit">Sign Up</button>
+        <p class="link">Already have an account? <a href="login.html" onclick="showLogin()">Log In</a></p>
+      </form>
+    </div>
 </body>
 </html>

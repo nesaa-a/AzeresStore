@@ -1,11 +1,28 @@
-header{
+*{ font-family: "Saira Extra Condensed", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+   li, a, i{
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: beige;
+    text-decoration: none;
+  }
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:30px 10% ;
+    padding: 30px 10%;
     background-color: black;
     height: 40px;
-  }
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+}
   #logo{
     cursor: pointer;
     color: beige;
@@ -80,24 +97,30 @@ body {
   height: 100vh;
 }
 
-.login-container {
-  background: #ffffff;
-  padding: 2rem;
+.form-container {
+  background: rgb(255, 255, 255);
+  padding: 5rem;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.login-container:hover {
+.signup-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-.login-form h1 {
+.form h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
 }
+.form-container.focused {
+  transform: translateY(-10px); /* Lëviz formën lart */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Shton një hije më të thellë */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animon efektin */
+}
+
 
 .input-group {
   position: relative;
@@ -116,7 +139,7 @@ body {
 }
 
 .input-group input:focus {
-  border-color: #6c63ff;
+  border-color: white;
   background: #ffffff;
 }
 
@@ -125,18 +148,17 @@ body {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: #aaa;
+  color: #000000;
   font-size: 1rem;
   pointer-events: none;
   transition: all 0.3s ease;
 }
-
 .input-group input:focus + label,
 .input-group input:not(:placeholder-shown) + label {
   top: -10px;
   left: 5px;
   font-size: 0.85rem;
-  color: #6c63ff;
+  color: rgb(0, 0, 0);
   background: #ffffff;
   padding: 0 5px;
 }
@@ -147,29 +169,33 @@ button {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  background: #6c63ff;
+  background: rgb(0, 0, 0);
   color: white;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+
 button:hover {
-  background: #5b52e4;
+  background: white;
   transform: scale(1.05);
+  color: #000000;
+  
 }
 
-.signup-link {
+.link {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
 }
 
-.signup-link a {
-  color: #6c63ff;
+.link a {
+  color:#007bff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.signup-link a:hover {
-  color: #5b52e4;
+.link a:hover {
+  color: white;
+  text-decoration: underline;
 }
