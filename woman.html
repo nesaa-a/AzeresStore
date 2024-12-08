@@ -14,7 +14,7 @@
      <ul class="nav-links">
         <li><a class="li" href="man.html">MAN</a></li>
         <li><a class="li" href="woman.html">WOMAN</a></li>
-        <li><a class="li" href="#new">NEW</a></li>
+        <li><a class="li" href="home.html">NEW</a></li>
     </ul>
  </nav>
  <div class="dropdown">
@@ -28,6 +28,96 @@
    </div>
     </header>
 
-  
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Type of Product</h3>
+      <ul>
+        <li><input type="checkbox" id="coats"><label for="coats">Coats</label></li>
+        <li><input type="checkbox" id="tops"><label for="tops">Tops</label></li>
+        <li><input type="checkbox" id="dresses"><label for="dresses">Dresses</label></li>
+        <li><input type="checkbox" id="pants"><label for="pants">Pants</label></li>
+        <li><input type="checkbox" id="shorts"><label for="shorts">Shorts</label></li>
+        <li><input type="checkbox" id="skirts"><label for="skirts">Skirts</label></li>
+      </ul>
+<hr>
+      <h3>Gender</h3>
+      <ul>
+        <li><input type="checkbox" id="man"><label for="man">Man</label></li>
+        <li><input type="checkbox" id="woman"><label for="woman">Woman</label></li>
+      </ul>
+<hr>
+      <h3>Color</h3>
+      <div class="colors">
+        <span class="color cream"></span>
+        <span class="color beige"></span>
+        <span class="color pink"></span>
+        <span class="color red"></span> <br>
+        <span class="color blue"></span>
+        <span class="color green"></span>
+        <span class="color brown"></span>
+        <span class="color black"></span>
+      </div>
+<hr>
+      <h3>Price Filter</h3>
+      <div class="price-filter">
+        <input type="range" min="200" max="2500" step="10">
+        <button>Apply</button>
+        <button class="clear-all">Clear All</button>
+      </div>
+    </aside>
+
+    <main class="product-grid">
+      <div class="product">
+        <img src="./images/download.jpeg" alt="Women's Black Two Pieces Set">
+        <p>Women's Black Two Pieces Set</p>
+        <p class="price">$3100</p>
+      </div>
+      <div class="product">
+        <img src="./images/images (2).jpeg" alt="Women's Minimalistic Black Jeans">
+        <p>Women's Minimalistic Black Jeans</p>
+        <p class="price">$2600</p>
+      </div>
+      <div class="product">
+        <img src="./images/Zara-Spring-Summer-2017-Campaign04.jpg" alt="Black Bear Fluffy Hat">
+        <p>Black Bear Fluffy Hat</p>
+        <p class="price">$1500</p>
+      </div>
+      <div class="product">
+        <img src="./images/Screenshot 2024-07-06 194827.jpg" alt="Minimalistic Short Stylish Skirt">
+        <p>Minimalistic Short Stylish Skirt</p>
+        <p class="price">$2800</p>
+      </div>
+      <div class="product">
+        <img src="./images/Screenshot 2024-07-06 194827.jpg" alt="Women's Black Two Pieces Set">
+        <p>Women's Black Two Pieces Set</p>
+        <p class="price">$3100</p>
+      </div>
+      <div class="product">
+        <img src="./images/Zara-Spring-Summer-2017-Campaign04.jpg" alt="Women's Minimalistic Black Jeans">
+        <p>Women's Minimalistic Black Jeans</p>
+        <p class="price">$2600</p>
+      </div>
+      <div class="product">
+        <img src="./images/images.jpeg" alt="Black Bear Fluffy Hat">
+        <p>Black Bear Fluffy Hat</p>
+        <p class="price">$1500</p>
+      </div>
+      <div class="product">
+        <img src="./images/download.jpeg" alt="Minimalistic Short Stylish Skirt">
+        <p>Minimalistic Short Stylish Skirt</p>
+        <p class="price">$2800</p>
+      </div>
+      <button class="see-more">See More</button>
+    </main>
+
+    <script>
+    document.querySelector('.clear-all').addEventListener('click', () => {
+  document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(input => {
+    input.checked = false;
+        });
+      });
+
+    </script>
+  </div>
 </body>
 </html>

@@ -81,3 +81,101 @@
 
   }
 
+  /*---MAIN---*/
+  body{
+    font-family: "Saira Extra Condensed", sans-serif;
+  }
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 5px;
+  }
+  
+  .sidebar .colors {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .colors .color {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  .sidebar .colors .cream { background-color: #e9e6da; }
+  .sidebar .colors .beige { background-color: #dfd1c5; }
+  .sidebar .colors .pink { background-color: #bf88ae; }
+  .sidebar .colors .red { background-color: #b94040; }
+  .sidebar .colors .blue { background-color: #85a6c6; }
+  .sidebar .colors .green { background-color: #728f75; }
+  .sidebar .colors .brown { background-color: #1c1c1c; }
+  .sidebar .colors .black { background-color: #000000; }
+  
+  .sidebar .price-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .price-filter input {
+    width: 100%;
+  }
+  
+  .price-filter button {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .price {
+    color: #888;
+  }
+  
+  .see-more {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
