@@ -154,14 +154,19 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
         
-            </script>
-
-    <script>
     document.querySelector('.clear-all').addEventListener('click', () => {
   document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(input => {
     input.checked = false;
         });
       });
+
+      const toggleSidebar = document.getElementById('toggle-sidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleSidebar.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+});
+
 
     </script>
 
